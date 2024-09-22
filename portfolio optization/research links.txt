@@ -1,0 +1,5 @@
+tft research paper: https://link.springer.com/article/10.1007/s10844-024-00851-2
+
+nepse portfolio optimization research paper: https://link.springer.com/chapter/10.1007/978-981-33-4355-9_49
+
+Forecasting stock prices with long-short term memory neural network based on attention mechanism:https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227222
