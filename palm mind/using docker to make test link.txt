@@ -1,0 +1,74 @@
+Microsoft Windows [Version 10.0.22631.4112]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\hp>ssh palmmind@192.168.1.100
+The authenticity of host '192.168.1.100 (192.168.1.100)' can't be established.
+ED25519 key fingerprint is SHA256:znweIFebhp860jV3GZVo7XdwKpBpnFFgQIcXsT28mRI.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Please type 'yes', 'no' or the fingerprint:
+
+C:\Users\hp>
+
+
+
+C:\Users\hp>ssh palmmind@192.168.1.100
+The authenticity of host '192.168.1.100 (192.168.1.100)' can't be established.
+ED25519 key fingerprint is SHA256:znweIFebhp860jV3GZVo7XdwKpBpnFFgQIcXsT28mRI.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?  Hy
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '192.168.1.100' (ED25519) to the list of known hosts.
+palmmind@192.168.1.100's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-119-generic x86_64)
+
+ Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Wed Sep 11 10:18:47 2024 from 192.168.1.84
+palmmind@palmmind:~$ cd KMC-
+-bash: cd: KMC-: No such file or directory
+palmmind@palmmind:~$ cd KMC-LLM-AGENT/
+palmmind@palmmind:~/KMC-LLM-AGENT$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 4 (delta 3), reused 3 (delta 3), pack-reused 1 (from 1)
+Unpacking objects: 100% (4/4), 1.15 KiB | 34.00 KiB/s, done.
+From github.com:PalmMindTechnology/KMC-LLM-AGENT
+   22a9138..13dd618  main       -> origin/main
+Updating 22a9138..13dd618
+Fast-forward
+ Tools/tools__init__.py | 39 ++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 38 insertions(+), 1 deletion(-)
+palmmind@palmmind:~/KMC-LLM-AGENT$ sudo docker-compose down
+[sudo] password for palmmind:
+Stopping kmc-llm-agent_redis_server_kmc_1 ... done
+Stopping kmc-llm-agent_openai_kmc_1       ... done
+Removing kmc-llm-agent_redis_server_kmc_1 ... done
+Removing kmc-llm-agent_openai_kmc_1       ... done
+Removing network kmc-llm-agent_default
+palmmind@palmmind:~/KMC-LLM-AGENT$ sudo docker-compose up -d
+Creating network "kmc-llm-agent_default" with the default driver
+Creating kmc-llm-agent_openai_kmc_1       ... done
+Creating kmc-llm-agent_redis_server_kmc_1 ... done
+palmmind@palmmind:~/KMC-LLM-AGENT$ cd ..
+palmmind@palmmind:~$ cd KMC-
+KMC-Chatbot/   KMC-LLM-AGENT/
+palmmind@palmmind:~$ cd KMC-Chatbot/
+palmmind@palmmind:~/KMC-Chatbot$ nano .env
+palmmind@palmmind:~/KMC-Chatbot$ palmmind@palmmind:~/KMC-Chatbot$
+palmmind@palmmind:~/KMC-Chatbot$
+palmmind@palmmind:~/KMC-Chatbot$ cls
+Command 'cls' not found, but there are 18 similar ones.
+palmmind@palmmind:~/KMC-Chatbot$ cd ..
+palmmind@palmmind:~$ sudo docker logs
+"docker logs" requires exactly 1 argument.
+See 'docker logs --help'.
+
+Usage:  docker logs [OPTIONS] CONTAINER
+
+Fetch the logs of a container
+palmmind@palmmind:~$ sudo docker ps
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED              STATUS
+                PORTS                                                                                      N
+palmmind@palmmind:~$

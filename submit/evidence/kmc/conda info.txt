@@ -1,0 +1,19 @@
+in conda cmd
+
+cd into that file location
+
+
+conda create -n "name" python==3.11 for global 
+conda create -p "name" for locally 
+
+conda activate "name"
+
+(C:\Users\hp\palmMind\KMC-LLM-AGENT\kmc_env) C:\Users\hp\palmMind\KMC-LLM-AGENT>code . => to open vs code 
+
+
+redis:
+sudo systemctl status redis
+sudo systemctl start redis
+sudo systemctl enable redis
+redis-cli ping
+redis-cli
